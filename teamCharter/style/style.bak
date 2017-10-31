@@ -1,0 +1,506 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  /*background-color: #dfe1d5;*/
+  background-image:url(../images/charterImages/headerImage.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  margin: auto;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+header h1{
+  text-align: center;
+  color: #415f63;
+  margin: 0 auto;
+  font-size: 7em;
+
+}
+
+header h2{
+  text-align: center;
+  color: #415f63;
+  margin: 0 auto;
+  font-size: 2em;
+}
+
+header h2:first-child{
+  padding-top: 200px;
+}
+
+.backgroundImage h2{
+  text-align: center;
+  font-size: 4em;
+}
+
+h3{
+  text-align: center;
+}
+
+.colorStripTop{
+  width: 100%;
+  height: 40px;
+  background-image:url(../images/charterImages/asset20.svg);
+  position: absolute;
+  top: 0;
+}
+
+.colorStripBottom{
+  width: 100%;
+  height: 40px;
+  background-image:url(../images/charterImages/asset20.svg);
+  position: absolute;
+  bottom: 0;
+
+}
+
+.backgroundImage{
+  width: 100%;
+  background-image:url(../images/charterImages/background.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  margin: auto;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.container{
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.team{
+  width: 100%;
+  /*height: auto;*/
+  background-color: #e3d6ac;
+  margin-bottom: 40%;
+  position: relative;
+  z-index: 1;
+  overflow: auto;
+  }
+
+  .team h2, h3, ul{
+    color: #415f63;
+  }
+
+  .team h2{
+    padding-top: 20px;
+  }
+
+  .roles{
+    display:none;
+  }
+
+.teamMember1:hover, .teamMember2:hover, .teamMember3:hover{
+  transform: scale(1.3);
+  transition: all 1s ease;
+  z-index: 2;
+}
+
+.teamMember1:hover li, .teamMember2:hover li, .teamMember3:hover li{
+  display: none;
+}
+
+.teamMember1 p, .teamMember2 p, .teamMember3 p{
+  display: none;
+}
+
+.teamMember1:hover p, .teamMember2:hover p, .teamMember3:hover p{
+  display: block;
+  margin: 0 auto;
+  padding-right: 10px;
+  transition: all 1s ease;
+}
+
+/*here are the three team member cards*/
+
+.teamMember1, .teamMember2{
+  width: 30.66%;
+  background-color: #966d35;
+  float: left;
+  margin-left: 2%;
+  position: relative;
+  margin-bottom: 100px;
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  font-size: 1.25em;
+}
+
+.teamMember3{
+  width: 30.66%;
+  background-color: #966d35;
+  float: right;
+  margin: 0 2% 0 2%;
+  position: relative;
+  margin-bottom: 100px;
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  font-size: 1.25em;
+}
+
+/*these divs are for the team member photos*/
+
+ .wayne img, .matt img, .marina{
+  height: auto;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #e3d6ab;
+  margin: 0 auto;
+  padding: 5px 5px 5px 5px;
+  dispay: block;
+}
+
+.wayne, .matt, .marina{
+  padding: 10px;
+}
+
+.strengths{
+  width: 100%;
+  background-color: #8fbdc7;
+  position: relative;
+  overflow: auto;
+  margin-bottom: 40%;
+  position: relative;
+}
+
+.strengths h2{
+  color: #415f63;
+  padding-top: 20px;
+}
+
+/*The following are the individual divs for each strength and oppurtunites*/
+.so1{
+  width: 58%;
+  height: auto;
+  margin: 0 0 2% 2%;
+  float: left;
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+.so2{
+  width: 30.6%;
+  height: auto;
+  margin: 0 2% 2% 2%;
+  float: right;
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+}
+
+.so3{
+  width: 30.6%;
+  height: auto;
+  margin: 0 2% 2% 2%;
+  float: right;
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+}
+
+.so4{
+  width: 30.6%;
+  height: auto;
+  margin: 0 0 2% 2%;
+  clear: both;
+  float: left;
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+}
+
+.so5{
+  width: 30.6%;
+  height: auto;
+  margin: 0 0 2% 2%;
+  display: inline-block;
+  float: left;
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+  .so6{
+    width: 30.6%;
+    height: auto;
+    margin: 0 2% 2% 2%;
+    display: inline-block;
+    float: right;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+  .so7{
+    width: 30.6%;
+    height: auto;
+    margin: 0 0 2% 2%;
+    float: left;
+    clear: left;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+  .so8{
+    width: 30.6%;
+    height: auto;
+    margin: 0 0 2% 2%;
+    display: inline-block;
+    float: left;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+  .so9{
+    width: 30.6%;
+    height: auto;
+    margin: 0 2% 2% 2%;
+    display: inline-block;
+    float: right;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+  .so10{
+    width: 47%;
+    height: auto;
+    margin: 0 0 2% 2%;
+    float: left;
+    clear: left;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+  .so11{
+    width: 47%;
+    height: auto;
+    margin: -6% 2% 2% 2%;
+    float: right;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+  .so12{
+    width: 47%;
+    height: auto;
+    margin: 0 0 100px 2%;
+    float: left;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+/*The following is for the five logos used in strenght and oppurtunities*/
+
+  .logo1{
+    width: 8.6%;
+    height: auto;
+    margin: 0 0 2% 2%;
+    float: left;
+    clear: right;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+  .logo2{
+    width: 8.6%;
+    height: auto;
+    margin: 0 0 2% 1%;
+    float: left;
+    clear: right;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+  .logo3{
+    width: 8.6%;
+    height: auto;
+    margin: 0 0 2% 1%;
+    float: left;
+    clear: right;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+  .logo4{
+    width: 8.6%;
+    height: auto;
+    margin: 0 0 2% 1%;
+    float: left;
+    clear: right;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+  .logo5{
+    width: 8.6%;
+    height: auto;
+    margin: 0 2% 2% 0;
+    float: right;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+  }
+
+/*this is the code for the clickable divs*/
+
+.collapse{
+  cursor: pointer;
+  display: block;
+  background: #8fbdc7;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+}
+.collapse + input{
+  display: none; /* hide the checkboxes */
+}
+.collapse + input + div{
+  display:none;
+}
+.collapse + input:checked + div{
+  display:block;
+  padding: 2%;
+  font-size: 1em;
+  color: #415f63;
+}
+
+.collapse ul, li {
+  padding: 5% 15% 5% 0;
+  margin: 0 auto;
+  /*margin-right: 10px;*/
+}
+
+.teamProcess{
+  width: 100%;
+  background-color: #966d35;
+  position: relative;
+  overflow: auto;
+  margin-bottom: 40%;
+}
+
+.teamProcess h2{
+  color: #415f63;
+  padding-top: 20px;
+}
+
+.card1, .card2{
+  width: 30.66%;
+  background-color: #e3d6ab;
+  float: left;
+  margin-left: 2%;
+  position: relative;
+  margin-bottom: 100px;
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+}
+
+.card3{
+  width: 30.66%;
+  background-color: #e3d6ab;
+  float: right;
+  margin: 0 2% 0 2%;
+  position: relative;
+  margin-bottom: 100px;
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+}
+
+.card1Image img{
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 0 5px 10px 5px;
+}
+
+.card2Image img{
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 0 5px 10px 5px;
+}
+
+.card3Image img{
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 0 5px 10px 5px;
+}
+
+.expectations{
+  width: 100%;
+  background-color: #e3d6ab;
+  position: relative;
+  overflow: auto;
+  margin-bottom: 40%;
+}
+
+.expectations h2{
+  color: #415f63;
+  padding-top: 20px;
+}
+
+.card4, .card5{
+  width: 30.66%;
+  background-color: #dfe1d5;
+  float: left;
+  margin-left: 2%;
+  position: relative;
+  margin-bottom: 100px;
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+}
+
+.card6{
+  width: 30.66%;
+  background-color: #dfe1d5;
+  float: right;
+  margin: 0 2% 0 2%;
+  position: relative;
+  margin-bottom: 100px;
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+}
+
+.card4Image img{
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 0 5px 10px 5px;
+}
+
+.card5Image img{
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 0 5px 10px 5px;
+}
+
+.card6Image img{
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 0 5px 10px 5px;
+}
+.effectivness{
+width: 100%;
+background-color: #8fbdc7;
+position: relative;
+overflow: auto;
+}
+
+.conLeft img{
+  height: auto;
+  width: 45%;
+  float: left;
+  position: relative;
+  margin: 0 0 100px 20px;
+  filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.9));
+}
+
+
+.conRight{
+  max-width: 45%;
+  float: right;
+  position: relative;
+}
+
+.conRight li{
+  font-size: 1.5em;
+  margin-bottom: 100px;
+  lines: line-height: 2;
+}
+
+.effectivness h2{
+  color: #415f63;
+  padding-top: 20px;
+}
