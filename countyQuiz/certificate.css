@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+.certificate {
+  width: 792px;
+  height: 612px;
+  margin: 0 auto;
+  position: relative; /* Going to position text with absolute positioning. */
+  /*background-image: url(certificate.jpg);*/
+  background-image: url("Certificate of completion.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Only going to be concerned with vertical placement. In order to accommodate a longer name, I'm only going to center a 100% width text field. */
+p.name {
+  position: absolute;
+  text-align: center;
+  font-size: 40px; /* This number will determine the top value below. */
+  font-weight: bold;
+  width: 100%;
+  top: 340px;
+}
+
+p.date {
+  position: absolute;
+  font-size: 18px;
+  font-style: italic;
+  left: 50px;
+  bottom: 35px; /* Instead of having a large top value, I'm position from the bottom. I little easier. */
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
