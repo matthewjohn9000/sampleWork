@@ -1,0 +1,16 @@
+The last of three projects created with a team of three, down from the orginal four.
+
+For these projects I took the role of lead developer.
+
+This project was designed to recreate a website similiar to the Illinois Bike Safety Quiz. 
+
+As a group we decided the Illinois quiz was dated and not much fun to work through.
+
+Since we were developing a Children's version we wanted large buttons, fun colors and an easy to use UI with appropiate feedback.
+
+It was important to keep the users score and also display why a particular answer was correct or not.
+
+The quiz as a whole works but there are some additions needed. Including but not limited a button to retake the quiz if the score is too 
+low and also a button to escape the screen when printing a certificate of completion.
+
+There also needs to be some work done for the quiz to handle a mobile view. 
