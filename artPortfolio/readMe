@@ -1,0 +1,10 @@
+This is a mock idea for an artist's portfolio site.
+
+The site would showcase my work as a photographer, artist and graphic designer.
+
+This was my first full website design, from mock-up to development.Although at this point in developement I was still struggling with 
+responsive design. I have since made some updates but more work needs to be doneto convert images to percents instead of static pixels.
+
+I would also work on a better gallery design utilizing a responsive CSS grid to showcase more artwork. There is also the option of 
+incoprating an API with a site like Flicker to maintain all the different images with greater ease.
+
