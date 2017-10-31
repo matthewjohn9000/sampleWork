@@ -1,0 +1,697 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.logo{
+  /*height: 50px;*/
+  width: 125px;
+  position: absolute;
+  z-index: 2;
+}
+
+.logosmall {
+  height: 95px;
+  position: fixed;
+  z-index: 2;
+}
+
+header.main {
+  width: 100%;
+  height: 800px;
+  /*background-color: #01B0F0;*/
+  background-image: url(../img/header3.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+nav.main {
+  /*background-color: #000;*/
+  width: 100%;
+  min-width: 700px;
+  position: fixed;
+  z-index: 1;
+  background: #000; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #000, #333); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #000, #333); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #000, #333); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #000, #333); /* Standard syntax */
+}
+
+/*nav.main a {
+  font-family: 'Lobster', cursive;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-top: 50px;
+  color: white;
+  float: left;
+}*/
+
+nav.main ul {
+  list-style: none;
+  margin: 0;
+  text-align: right;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+nav.main ul li {
+  display: inline-block;
+  margin-right: 20px;
+  float: right;
+  padding-bottom: 20px;
+}
+
+/*nav.main ul li:last-child{
+  margin-right: 10px;
+}*/
+
+nav.main ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #a8ddcd;
+  font-size: 24px;
+}
+
+header.main h2 {
+  position: relative;
+  top: 850px;
+  color: white;
+}
+
+/*.parallax {
+  perspective: 1px;
+  height: 10000px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}*/
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.row{
+/*	width: 1200px;*/
+/*	margin: 0 auto;*/
+	display: flex;
+	flex-flow: row wrap;	
+}
+
+.treebackground {
+  background-image:url(../img/treebackground4.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+  /*transform: translateZ(-10px);*/
+}
+
+.treebackgroundinner {
+  background-image:url(../img/treebackground4.jpg);
+  width: 100%;
+  height: 1500px;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: block;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.treebackgroundinnera {
+  background-image:url(../img/treebackground4.jpg);
+  /*max-width: 1200px;
+  min-width: 700px;*/
+  width: 100%;
+  height: 2300px;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: block;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.treebackgroundinnerGallery {
+  background-image:url(../img/treebackground4.jpg);
+  width: 100%;
+  height: 3800px;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: block;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.gallerypagebar {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  /*top: 500px;*/
+  position: absolute;
+  opacity: 0.9;
+  /*transform: translateZ(-1px);*/
+}
+
+
+.gallerybar {
+  max-width: 100%;
+  /*height: 800px;*/
+  overflow: auto;
+  background-color: #333;
+  /*top: 500px;*/
+  position: relative;
+  opacity: 0.9;
+  padding-bottom: 50px;
+  /*transform: translateZ(-1px);*/
+}
+
+.galleryright {
+  width: 600px;
+  float: right;
+  margin: 0 auto;
+  position: relative;
+  /*border: 2px solid red;*/
+}
+
+.galleryleft h2 {
+  position: relative;
+  font-size: 100px;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+  color: #f98dc9;
+}
+
+.galleryleft p {
+  width: 500px;
+  margin-left: 20px;
+  position: relative;
+  color: white;
+  }
+
+.galleryleft {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.gallery1 {
+  /*background-color: black;*/
+  background-image:url(../img/california.jpg);
+  width: 270px;
+  height: 350px;
+  float: left;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.gallery1:hover {
+  background-image:url(../img/californiaOther.jpg);
+  transition: all .5s ease;
+}
+
+.gallery2 {
+  /*background-color: black;*/
+  background-image:url(../img/pnw.jpg);
+  width: 270px;
+  height: 350px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.gallery2:hover {
+  background-image:url(../img/pnwOther.jpg);
+  transition: all .5s ease;
+}
+
+.gallery3 {
+  /*background-color: black;*/
+  background-image:url(../img/oaw.jpg);
+  width: 270px;
+  height: 350px;
+  float: left;
+  clear: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.gallery3:hover {
+  background-image:url(../img/oawOther.jpg);
+  transition: all .5s ease;
+}
+
+.gallery4 {
+  /*background-color: black;*/
+  background-image:url(../img/pc.jpg);
+  width: 270px;
+  height: 350px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.gallery4:hover {
+  background-image:url(../img/pcOther.jpg);
+  transition: all .5s ease;
+}
+
+.slides {
+  width: 530px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin: 20px auto;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+.navigation li {
+  padding: 0;
+  margin: 0;
+  float: left;
+  clear: both;
+}
+
+.navigation li a img {
+  display: block;
+  border: none;
+}
+
+.navigation li a {
+  display: block;
+}
+
+.full-picture {
+  width: 450px;
+  height: 600px;
+  overflow: hidden;
+  float: left;
+  margin-bottom: 40px;
+  }
+
+.center {
+  text-align: center;
+  margin: auto;
+  color: black;
+  }
+
+blockquote {
+  color: #a8ddcd;
+  font-size: 50px;
+  position: relative;
+  margin: auto;
+  padding-top: 300px;
+  padding-bottom: 500px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+blockquote cite {
+  line-height: 2em;
+  text-align: center;
+  color: white;
+}
+
+/*blockquote:before{
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  color: white;
+}*/
+
+.aboutbar {
+  max-width: 100%;
+  /*height: 800px;*/
+  overflow: auto;
+  background-color: #333;
+  /*top: 500px;*/
+  position: relative;
+  opacity: 0.9;
+  padding-bottom: 50px;
+  /*transform: translateZ(-1px);*/
+}
+
+.aboutpagebar {
+  width: 100%;
+  min-width: 700px;
+  height: 100%;
+  background-color: #333;
+  /*top: 500px;*/
+  position: absolute;
+  opacity: 0.9;
+  /*transform: translateZ(-1px);*/
+}
+
+.aboutright {
+  width: 600px;
+  float: right;
+  position: relative;
+  margin: 0 auto;
+}
+
+.aboutpage {
+  max-width: 1000px;
+  min-width: 700px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.aboutpage h2 {
+  font-size: 100px;
+  margin: auto;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #f98dc9;
+}
+
+.aboutpage h3 {
+  margin: auto;
+  text-align: center;
+  color: #a8ddcd;
+  font-size: 2em;
+}
+
+.aboutpage h3:first-of-type {
+  margin-top: 50px;
+}
+
+.aboutpage p {
+  position: relative;
+  color: white;
+  padding: 0 100px 20px 100px;
+  line-height: 1.5em;
+}
+
+.aboutPage1 {
+  background-image:url(../img/aboutPage1.jpg);
+  width: 450px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.aboutPage2 {
+  background-image: url(../img/aboutPage2.jpg);
+  width: 450px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.aboutright h2 {
+  position: relative;
+  font-size: 100px;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+  color: #f98dc9;
+}
+
+.aboutright p {
+  width: 500px;
+  margin-left: 20px;
+  position: relative;
+  color: white;
+  }
+
+.aboutleft {
+  width: 600px;
+  float: left;
+  position: relative;
+  margin: 0 auto;
+}
+
+.aboutgallery1 {
+  /*background-color: black;*/
+  background-image:url(../img/aboutpic1.jpg);
+  width: 270px;
+  height: 350px;
+  float: left;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.aboutgallery2 {
+  /*background-color: black;*/
+  background-image:url(../img/aboutpic2.jpg);
+  width: 270px;
+  height: 350px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.aboutgallery3 {
+  /*background-color: black;*/
+  background-image:url(../img/aboutpic4.jpg);
+  width: 270px;
+  height: 350px;
+  float: left;
+  clear: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.aboutgallery4 {
+  /*background-color: black;*/
+  background-image:url(../img/aboutpic4a.jpg);
+  width: 270px;
+  height: 350px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+
+.contactbar {
+  max-width: 100%;
+  /*height: 800px;*/
+  overflow: auto;
+  background-color: #333;
+  /*top: 500px;*/
+  position: relative;
+  opacity: 0.9;
+  padding-bottom: 50px;
+  /*transform: translateZ(-1px);*/
+}
+
+.contactleft {
+  width: 600px;
+  float: left;
+  position: relative;
+  margin: 0 auto;
+}
+
+.contactleft h2 {
+  position: relative;
+  font-size: 100px;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+  padding-right: 0;
+  color: #f98dc9;
+}
+
+.contactleft p {
+  width: 500px;
+  margin-left: 20px;
+  position: relative;
+  color: white;
+  }
+
+.contactright {
+  width: 600px;
+  float: right;
+  position: relative;
+  margin: 0 auto;
+}
+
+.contactpic1 {
+  /*background-color: black;*/
+  background-image:url(../img/contactpic1.png);
+  width: 100px;
+  height: 85px;
+  float: left;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.contactpic2 {
+  /*background-color: black;*/
+  background-image:url(../img/contactpic2.png);
+  width: 75px;
+  height: 75px;
+  float: right;
+  margin-top: 100px;
+  margin-right: 100px;
+  margin-left: 20px;
+}
+
+.contactpic3 {
+  /*background-color: black;*/
+  background-image:url(../img/contactpic3.png);
+  width: 113px;
+  height: 75px;
+  float: left;
+  clear: left;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.contactpic4 {
+  /*background-color: black;*/
+  background-image:url(../img/contactpic4.png);
+  width: 133px;
+  height: 75px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 70px;
+/*  margin-left: 20px;*/
+}
+
+.contactpic1C {
+  /*background-color: black;*/
+  background-image:url(../img/contactpic1.png);
+  width: 100px;
+  height: 75px;
+  float: left;
+  margin-top: 150px;
+  margin-left: 15%;
+}
+
+.contactpic2C {
+  /*background-color: black;*/
+  background-image:url(../img/contactpic2.png);
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin-top: 150px;
+  margin-left: 9%;
+}
+
+.contactpic3C {
+  /*background-color: black;*/
+  background-image:url(../img/contactpic3.png);
+  width: 113px;
+  height: 75px;
+  float: left;
+  margin-top: 150px;
+  margin-left: 9%;
+}
+
+.contactpic4C {
+  /*background-color: black;*/
+  background-image:url(../img/contactpic4.png);
+  width: 133px;
+  height: 75px;
+  float: left;
+  margin-top: 150px;
+  margin-left: 9%;
+}
+
+footer {
+  width: 100%;
+  height: 105px;
+  background-color: #000;
+  background: -webkit-linear-gradient(left top, #000, #333); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #000, #333); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #000, #333); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #000, #333); /* Standard syntax */
+}
+
+.contactForm {
+  background: white;
+  margin: auto;
+  position: relative;
+  width: 60%;
+  height: 500px;
+  font-size: 14px;
+  line-height: 35px;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.message #message {
+  width: 90%;
+  height: 150px;
+  display: block;
+  margin: auto;
+
+}
+
+a:link, a:visited, a:active {
+  color: #f98dc9;
+}
+
+a:hover h2, a:hover {
+  color: #4e004e;
+}
+
+a h2 {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+button {
+  margin-top: 20px;
+}
+
+/*@media (max-width: 699px) {
+  .aboutright, .galleryright, .contactright {
+    float: left;
+    clear: left;
+    margin: 0 auto;
+  }
+
+  .gallerybar {
+    max-width:699px;
+  }
+
+  .treebackground {
+    max-width: 699px;
+  }
+
+}
+*/
