@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Add Box</title>
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/jquery-2.2.3.min.js"></script>
+	<link rel="stylesheet" href="awesomplete.css" />
+	<script src="awesomplete.min.js" async></script>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div class="form-group col-xs-12 list-box">
+	    <label for="search-participant">Add participants</label>
+	    <div class="grey-box col-xs-12">
+			<div class="form-group">
+				<label for="search-participant">Search</label>
+	    		
+	    		<input type="text" class="form-control text-box awesomplete" id="search-participant" placeholder="Student Name" list='mylist'>
+	    		
+	    		<datalist id="mylist">
+					<option>Ada</option>
+					<option>Java</option>
+					<option value="jaj">JavaScript</option>
+					<option>Brainfuck</option>
+					<option>LOLCODE</option>
+					<option>Node.js</option>
+					<option>Ruby on Rails</option>
+				</datalist>
+
+	    	</div>
+	    	<div class="display-names list-container">
+	    		
+	    	</div>
+	    </div>
+	</div>
+	<script src="interactive_list.js"></script>
+	<script>
+		var container = $('.list-box');
+
+		var outlets = {
+			container : container,
+			text_box : container.find('.text-box'),
+			list_container : container.find('.list-container'),
+		}
+
+		var list = new InteractiveList(outlets);
+
+		var input = $(".awesomplete");
+
+		input[0].addEventListener('awesomplete-selectcomplete', function(event) {
+			/* Act on the event */
+			list.addItem(event.text.label, event.text.value, "people");
+			event.target.value = "";
+		});
+
+	</script>
+</body>
+</html>

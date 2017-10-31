@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Auto Complete</title>
+	<script src="../../js/jquery-2.2.3.min.js"></script>
+	<link rel="stylesheet" href="awesomplete/awesomplete.css" />
+	<style>
+		
+	</style>
+</head>
+<body>
+	<input type="text" class="awesomplete" list="mylist">
+	<datalist id="mylist">
+		<option>Ada</option>
+		<option>Java</option>
+		<option value="jaj">JavaScript</option>
+		<option>Brainfuck</option>
+		<option>LOLCODE</option>
+		<option>Node.js</option>
+		<option>Ruby on Rails</option>
+	</datalist>
+	<div id="result">
+		
+	</div>
+
+	<script src="awesomplete/awesomplete.js" async></script>
+	
+	<script>
+		var cont = $("#result");
+		var input = $(".awesomplete");
+
+		input[0].addEventListener('awesomplete-select', function(event) {
+			/* Act on the event */
+			console.log(event);
+		});
+	</script>
+
+</body>
+</html>
